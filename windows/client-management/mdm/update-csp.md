@@ -139,6 +139,37 @@ The following diagram shows the Update configuration service provider in tree fo
 
 <p style="margin-left: 20px">Supported operation is Get.
 
+
+<a href="" id="rollback"></a>**Rollback**  
+Added in Windows 10, next major update. Node for the rollback operations.
+
+<a href="" id="rollback-qualityupdate"></a>**Rollback/QualityUpdate**  
+Added in Windows 10, next major update. Roll back latest Quality Update, if the machine meets the following conditions:  
+
+-  Condition 1: Device must be Windows Update for Business Connected
+-  Condition 2: Device must be in a Paused State
+-  Condition 3: Device must have the Latest Quality Update installed on the device (Current State)
+            
+If the conditions are not true, the device will not Roll Back the Latest Quality Update.
+
+<a href="" id="rollback-featureupdate"></a>**Rollback/FeatureUpdate**  
+Added in Windows 10, next major update. Roll Back Latest Feature Update, if the machine meets the following conditions:  
+
+-  Condition 1: Device must be Windows Update for Business Connnected
+-  Condition 2: Device must be in Paused State
+-  Condition 3: Device must have the Latest Feature Update Installed on the device (Current State)
+-  Condition 4: Machine should be within the uninstall period
+
+If the conditions are not true, the device will not Roll Back the Latest Feature Update.
+          
+
+<a href="" id="rollback-qualityupdatestatus"></a>**Rollback/QualityUpdateStatus**  
+Added in Windows 10, next major update. Returns the result of last RollBack QualityUpdate operation. 
+
+<a href="" id="rollback-featureupdatestatus"></a>**Rollback/FeatureUpdateStatus**  
+Added in Windows 10, next major update. Returns the result of last RollBack FeatureUpdate operation.
+
+
 <a href="" id="lastsuccessfulscantime"></a>**LastSuccessfulScanTime**  
 <p style="margin-left: 20px">The last successful scan time.
 
